@@ -1,3 +1,5 @@
 [submodule "integrador_go_basic"]
 	path = integrador_go_basic
 	url = git@github.com:GabrielMaSosa/integrador_go_basic.git
+[submodule "GO_WEB_TP7_TEST_FUNCTIONAL"]
+	ignore = untracked
