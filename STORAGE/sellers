@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "c4b10d81-5bc4-4f37-b39e-482953ec8c91",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29301183"
+	},
+	"item": [
+		{
+			"name": "GETALLSELLERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/sellers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sellers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POSTSELLERS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cid\": 789,\n    \"company_name\": \"MERCADO S.A\",\n    \"address\": \"AV San Martin\",\n    \"telephone\": \"3711343434\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/sellers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sellers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GETBYIDSELLERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/sellers/14",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sellers",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETESELLERS",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/sellers/13",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sellers",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCHSELLERS",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"telephone\": \"+543755273161\",\n    \"cid\": 987\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/sellers/14",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sellers",
+						"14"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
